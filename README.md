@@ -14,21 +14,21 @@ java & Maven need to be properly install on targeted nod to run this program.
 
 ### Installing & Executing the Program
 
-*simply clone the git-hub repo to any machine that has maven installed
-*open terminal in mac or CMD in windows
-*CD to the project Directory
-*run this below command to start the program
-**mvn -q test
+* Clone the git-hub repo to any machine that has maven installed
+* Open terminal in mac or CMD in windows
+* CD to the project Directory
+* run this below command to start the program
+* mvn -q test
 
-or simply run this executable file below
-Mac [sh Run.sh]
-Windows [Run.bat]
+* or simply run this executable file below
+* Mac [sh Run.sh]
+* Windows [Run.bat]
 
 ## Running From Eclipse
 
-Also We can Clone the Repo in Eclipse
-Then Right click the POM.XML file and
-Select Run - > Run As maven Test
+* Also We can Clone the Repo in Eclipse
+* Then Right click the POM.XML file and
+* Select Run - > Run As maven Test
 
 ### Test Plan & Test Case
 
@@ -37,12 +37,11 @@ We Can Test the Program by using following Scenarios
 ```
 TestCase ID	|	Test Data	|	Type |	Description
 =======================================================================================
-Test 0		  |	MD	|	Positive	|	Search State Information with 2 Character Upper Case abbreviation
-Test 1		  |	md	|	Positive	|	Search State Information with 2 Character lower case abbreviation
-Test 2		  |	nY	|	Positive	|	Search State Information with 2 Character Mix   case abbreviation
-Test 3		  |	Maryland	|	Positive	|	Search State Information with full state name
-
-Test 4		  |	xyz	|	negative	|	Search State Information with random name - It Should return invalid state
+Test 0		 |	MD	|	Positive	|	Search State Information with 2 Character Upper Case abbreviation
+Test 1		 |	md	|	Positive	|	Search State Information with 2 Character lower case abbreviation
+Test 2		 |	nY	|	Positive	|	Search State Information with 2 Character Mix   case abbreviation
+Test 3		 |	Maryland	|	Positive	|	Search State Information with full state name
+Test 4		 |	xyz	|	negative	|	Search State Information with random name - It Should return invalid state
 
 
 
