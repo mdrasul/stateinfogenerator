@@ -34,14 +34,13 @@ java & Maven need to be properly install on targeted nod to run this program.
 
 We Can Test the Program by using following Scenarios
 
-```
-TestCase ID	|	Test Data	|	Type |	Description
-=======================================================================================
-Test 0		 |	MD	|	Positive	|	Search State Information with 2 Character Upper Case abbreviation
-Test 1		 |	md	|	Positive	|	Search State Information with 2 Character lower case abbreviation
-Test 2		 |	nY	|	Positive	|	Search State Information with 2 Character Mix   case abbreviation
-Test 3		 |	Maryland	|	Positive	|	Search State Information with full state name
-Test 4		 |	xyz	|	negative	|	Search State Information with random name - It Should return invalid state
+| TestCase ID | Test Data | Type     | Description                                                                |
+|-------------|-----------|----------|----------------------------------------------------------------------------|
+| Test 0      | MD        | Positive | Search State Information with 2 Character Upper Case abbreviation          |
+| Test 1      | md        | Positive | Search State Information with 2 Character lower case abbreviation          |
+| Test 2      | nY        | Positive | Search State Information with 2 Character Mix,case abbreviation            |
+| Test 3      | Maryland  | Positive | Search State Information with full state name                              |
+| Test 4      | xyz       | negative | Search State Information with random name - It Should return invalid state |
 
 
 
