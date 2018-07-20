@@ -42,7 +42,7 @@ We Can Test the Program by using following Scenarios
 | Test 3      | Maryland  | Positive | Search State Information with full state name                              |
 | Test 4      | xyz       | negative | Search State Information with random name - It Should return invalid state |
 | Test 5      | abc123    | negative | Bad Input - Expected Error : State name can have number in it              |
-| 6Test 5     | Empty()   | negative | Bad Input - Expected Error : You Entered Nothing Try Again                 |
+| Test 6      | Empty()   | negative | Bad Input - Expected Error : You Entered Nothing Try Again                 |
 
 
 ## Authors
