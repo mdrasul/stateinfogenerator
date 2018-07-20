@@ -30,6 +30,12 @@ java & Maven need to be properly install on targeted nod to run this program.
 * Then Right click the POM.XML file and
 * Select Run - > Run As maven Test
 
+
+![Test Arch](https://github.com/mdrasul/stateinfogenerator/blob/master/Xnip2018-07-201_03-38-46.jpg)
+
+
+
+
 ### Test Plan & Test Case
 
 We Can Test the Program by using following Scenarios
