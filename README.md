@@ -14,11 +14,11 @@ java & Maven need to be properly install on targeted nod to run this program.
 
 ### Installing & Executing the Program
 
-simply clone the git-hub repo to any machine that has maven installed
-open terminal in mac or CMD in windows
-CD to the project Directory
-run this below command to start the program
-mvn -q test
+*simply clone the git-hub repo to any machine that has maven installed
+*open terminal in mac or CMD in windows
+*CD to the project Directory
+*run this below command to start the program
+**mvn -q test
 
 or simply run this executable file below
 Mac [sh Run.sh]
