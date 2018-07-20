@@ -3,6 +3,8 @@ package apprunner;
 import java.io.Console;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -55,8 +57,6 @@ public class runner
 		return true;
 	}
 	
-	
-	
 	public static void main(String[] args) throws IOException 
 	{
 		//======>> Check Application Dependent Rest Response and Build The State Information Library
@@ -107,6 +107,22 @@ public class runner
             } 
             else 
             {
+            	
+	            	if(stateNameOrAbbreviation.isEmpty())
+	        		{
+	        			System.out.println("\n You Entered Nothing");
+	        			System.out.println("Try Again");
+	        			continue;
+	        		}
+	            	
+            		if(BadTextWithNumber(stateNameOrAbbreviation))
+            		{
+            			System.out.println("\n Bad State Name State Name or Abbr cant have NUmber in it ");
+            			System.out.println("Try Again");
+            			continue;
+            		}
+            	
+            	
             		//==>>If State Name(EX.New York, Texas, Maryland) Given as Input
             		if(stateNameOrAbbreviation.length()>2)  
             		{
@@ -148,4 +164,46 @@ public class runner
 		System.exit(0);
 	}
 
+	
+	
+	/******** Utility Functions *************
+	 * 
+	 */
+	
+	public static boolean BadTextWithNumber(String text) 
+	{
+
+        // Regular expression pattern to test input
+        String regex = "(.)*(\\d)(.)*";      
+        Pattern pattern = Pattern.compile(regex);
+
+        //Scanner reader = new Scanner(System.in);
+        String input;
+
+       //System.out.println("Please enter input, must contain at-least one digit");
+       
+       //while (!input.equalsIgnoreCase("EXIT")) 
+       //{        
+
+            input = text;
+           
+           // Pattern pattern = Pattern.compile(regex);  // Don't do this, creating Pattern is expensive
+            Matcher matcher = pattern.matcher(input);
+
+            boolean isMatched = matcher.matches();
+            if (isMatched) 
+            {
+            		return true;
+                //System.out.println("PASS");
+            } 
+            else 
+            {
+            		return false;
+                //System.out.println("FAIL, Incorrect input");
+
+            }
+        //}
+    }
+	
+	
 }
